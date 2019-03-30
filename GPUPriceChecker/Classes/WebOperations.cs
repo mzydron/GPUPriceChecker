@@ -6,14 +6,13 @@ namespace GPUPriceChecker
     public class WebOperations
     {
         
-        public HttpWebResponse SendGetRequest(string http = "https://www.google.com/")
+        public HttpWebResponse SendGetRequestAndReturnResponse(string http = "https://www.google.com/")
         {
 
             WebRequest webReq = WebRequest.Create(http);
             HttpWebResponse webResp = (HttpWebResponse)webReq.GetResponse();
             return webResp;
         }
-
-
+        
     }
 }

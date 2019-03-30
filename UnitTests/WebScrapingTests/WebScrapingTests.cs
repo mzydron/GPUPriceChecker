@@ -14,7 +14,7 @@ namespace UnitTests.WebScrapingTests
         public static void SuccesfullGetRecived()
         {
             WebOperations webOps = new WebOperations();
-            HttpWebResponse wr = webOps.SendGetRequest();
+            HttpWebResponse wr = webOps.SendGetRequestAndReturnResponse();
 
             Assert.AreEqual(200, (int)wr.StatusCode);
 

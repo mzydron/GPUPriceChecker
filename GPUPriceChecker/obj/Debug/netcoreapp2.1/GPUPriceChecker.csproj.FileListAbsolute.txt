@@ -1,0 +1,11 @@
+c:\users\hiszpan\source\repos\GPUPriceChecker\GPUPriceChecker\bin\Debug\netcoreapp2.1\GPUPriceChecker.deps.json
+c:\users\hiszpan\source\repos\GPUPriceChecker\GPUPriceChecker\bin\Debug\netcoreapp2.1\GPUPriceChecker.runtimeconfig.json
+c:\users\hiszpan\source\repos\GPUPriceChecker\GPUPriceChecker\bin\Debug\netcoreapp2.1\GPUPriceChecker.runtimeconfig.dev.json
+c:\users\hiszpan\source\repos\GPUPriceChecker\GPUPriceChecker\bin\Debug\netcoreapp2.1\GPUPriceChecker.dll
+c:\users\hiszpan\source\repos\GPUPriceChecker\GPUPriceChecker\bin\Debug\netcoreapp2.1\GPUPriceChecker.pdb
+c:\users\hiszpan\source\repos\GPUPriceChecker\GPUPriceChecker\obj\Debug\netcoreapp2.1\GPUPriceChecker.csprojAssemblyReference.cache
+c:\users\hiszpan\source\repos\GPUPriceChecker\GPUPriceChecker\obj\Debug\netcoreapp2.1\GPUPriceChecker.csproj.CoreCompileInputs.cache
+c:\users\hiszpan\source\repos\GPUPriceChecker\GPUPriceChecker\obj\Debug\netcoreapp2.1\GPUPriceChecker.AssemblyInfoInputs.cache
+c:\users\hiszpan\source\repos\GPUPriceChecker\GPUPriceChecker\obj\Debug\netcoreapp2.1\GPUPriceChecker.AssemblyInfo.cs
+c:\users\hiszpan\source\repos\GPUPriceChecker\GPUPriceChecker\obj\Debug\netcoreapp2.1\GPUPriceChecker.dll
+c:\users\hiszpan\source\repos\GPUPriceChecker\GPUPriceChecker\obj\Debug\netcoreapp2.1\GPUPriceChecker.pdb

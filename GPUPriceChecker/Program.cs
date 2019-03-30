@@ -6,7 +6,7 @@ namespace GPUPriceChecker
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.ReadKey();
         }
 
         public static string Greet()

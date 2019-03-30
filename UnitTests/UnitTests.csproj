@@ -16,4 +16,8 @@
     <ProjectReference Include="..\GPUPriceChecker\GPUPriceChecker.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="GPUPriceChecker\" />
+  </ItemGroup>
+
 </Project>

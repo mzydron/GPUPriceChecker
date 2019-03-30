@@ -6,8 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Classes\" />
     <Folder Include="Interfaces\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.1" />
   </ItemGroup>
 
 </Project>

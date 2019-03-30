@@ -10,10 +10,9 @@ namespace UnitTests.Unit_Tests
     {
 
         [Test]
-        static void DataBaseExsist()
+        public static void GetConnectionString()
         {
-
-
+            Assert.IsTrue(false);
         }
 
     }

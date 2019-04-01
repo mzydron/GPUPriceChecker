@@ -8,6 +8,7 @@ namespace UnitTests.Unit_Tests
     [TestFixture]
     class DataBaseTest
     {
+        // For future development
 
         [Test]
         public static void GetConnectionString()

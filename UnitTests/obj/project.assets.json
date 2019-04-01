@@ -6958,11 +6958,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\users\\hiszpan\\source\\repos\\GPUPriceChecker\\UnitTests\\UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\Hiszpan\\source\\repos\\GPUPriceChecker\\UnitTests\\UnitTests.csproj",
       "projectName": "UnitTests",
-      "projectPath": "c:\\users\\hiszpan\\source\\repos\\GPUPriceChecker\\UnitTests\\UnitTests.csproj",
+      "projectPath": "C:\\Users\\Hiszpan\\source\\repos\\GPUPriceChecker\\UnitTests\\UnitTests.csproj",
       "packagesPath": "C:\\Users\\Hiszpan\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\hiszpan\\source\\repos\\GPUPriceChecker\\UnitTests\\obj\\",
+      "outputPath": "C:\\Users\\Hiszpan\\source\\repos\\GPUPriceChecker\\UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6981,8 +6981,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "c:\\users\\hiszpan\\source\\repos\\GPUPriceChecker\\GPUPriceChecker\\GPUPriceChecker.csproj": {
-              "projectPath": "c:\\users\\hiszpan\\source\\repos\\GPUPriceChecker\\GPUPriceChecker\\GPUPriceChecker.csproj"
+            "C:\\Users\\Hiszpan\\source\\repos\\GPUPriceChecker\\GPUPriceChecker\\GPUPriceChecker.csproj": {
+              "projectPath": "C:\\Users\\Hiszpan\\source\\repos\\GPUPriceChecker\\GPUPriceChecker\\GPUPriceChecker.csproj"
             }
           }
         }

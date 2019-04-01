@@ -17,7 +17,17 @@ namespace UnitTests.WebScrapingTests
             HttpWebResponse wr = webOps.SendGetRequestAndReturnResponse();
 
             Assert.AreEqual(200, (int)wr.StatusCode);
+            
+        }
 
+        [Test]
+        public static void SaveWebPageToFile()
+        {
+            
+            WebOperations webOps = new WebOperations();
+            webOps.SaveWebPageToFile();
+
+            FileAssert.Exists();
 
         }
     }

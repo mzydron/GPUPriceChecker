@@ -11,20 +11,25 @@ namespace GPUPriceChecker
         string webPath { get; }
         string savedFilePath = "C:\\SavedHtmls\\TempHtml.txt" ;
 
+
         public WebOperations(string webPath = "http://www.google.com/")
         {
             this.webPath = webPath;
         }
 
-        
+        public HttpWebRequest CreateWebRequest()
+        {
+            return (HttpWebRequest)WebRequest.Create(this.webPath);
+        }
+
         public HttpWebResponse SendGetRequestAndReturnResponse()
         {
-            WebRequest webReq = WebRequest.Create(this.webPath);
+            WebRequest webReq = CreateWebRequest();
             HttpWebResponse webResp = (HttpWebResponse)webReq.GetResponse();
             return webResp;
         }
         
-        public void SaveWebPageToFile()
+        public void SaveWebPageToFile(string filename)
         {
             /*For now is void as I came to painfull conclusion that SendGetRequestAndReturnResponse 
              * does two things instead of one 

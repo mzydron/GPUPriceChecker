@@ -11,6 +11,16 @@ namespace UnitTests.WebScrapingTests
     class WebScrapingTests
     {
         [Test]
+        public static void PrepareWebRequest()
+        {
+            WebOperations webOps = new WebOperations();
+
+            Assert.IsTrue(false);
+            
+
+        }
+
+        [Test]
         public static void SuccesfullGetRecived()
         {
             WebOperations webOps = new WebOperations();
@@ -23,11 +33,12 @@ namespace UnitTests.WebScrapingTests
         [Test]
         public static void SaveWebPageToFile()
         {
-            
-            WebOperations webOps = new WebOperations();
-            webOps.SaveWebPageToFile();
+            string filename = "";
 
-            FileAssert.Exists();
+            WebOperations webOps = new WebOperations();
+            webOps.SaveWebPageToFile(filename);
+
+            FileAssert.Exists(filename);
 
         }
     }

@@ -6,10 +6,10 @@ namespace GPUPriceChecker
     public class WebOperations
     {
         /* Class which is used to create base of operations for one URL passed in argument
-         default value given for easy testing */
+         * some methods will have overrides for easier development in future */
 
         string webPath { get; }
-        string savedFilePath = "C:\\SavedHtmls\\TempHtml.txt" ;
+        public string savedFilePath = "C:\\SavedHtmls\\TempHtml.txt";
 
 
         public WebOperations(string webPath = "http://www.google.com/")
@@ -22,6 +22,12 @@ namespace GPUPriceChecker
             return (HttpWebRequest)WebRequest.Create(this.webPath);
         }
 
+        public HttpWebRequest CreateWebRequest(string CustomWebPath)
+        {
+            return (HttpWebRequest)WebRequest.Create(CustomWebPath);
+        }
+
+        
         public HttpWebResponse SendGetRequestAndReturnResponse()
         {
             WebRequest webReq = CreateWebRequest();
@@ -29,13 +35,21 @@ namespace GPUPriceChecker
             return webResp;
         }
         
-        public void SaveWebPageToFile(string filename)
+        public void SaveWebPageToFile()
         {
-            /*For now is void as I came to painfull conclusion that SendGetRequestAndReturnResponse 
-             * does two things instead of one 
-             * breaking the Single Responsability Principle
-             * and making it harder to develop program further
-             * without rewriting it */
+            HttpWebResponse webResp = SendGetRequestAndReturnResponse();
+            using (webResp)
+            using (Stream webRespStream = webResp.GetResponseStream())
+            using (FileStream outputFile = File.OpenWrite(this.savedFilePath))
+            {
+                byte[] buffer = new byte[8192];
+                int bytesRead;
+                while ((bytesRead = webRespStream.Read(buffer, 0, buffer.Length)) > 0)
+                {
+                    outputFile.Write(buffer, 0, bytesRead);
+                }
+            }
+            
         }
 
 

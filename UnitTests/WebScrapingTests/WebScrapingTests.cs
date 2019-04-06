@@ -15,9 +15,18 @@ namespace UnitTests.WebScrapingTests
         {
             WebOperations webOps = new WebOperations();
 
-            Assert.IsTrue(false);
+            Assert.IsAssignableFrom<HttpWebRequest>(webOps.CreateWebRequest());
             
+        }
 
+        [Test]
+        public static void PrepareCustomWebRequest()
+        {
+            WebOperations webOps = new WebOperations();
+            HttpWebRequest request = webOps.CreateWebRequest();
+            HttpWebRequest customRequest = webOps.CreateWebRequest("http://onet.pl");
+
+            Assert.IsFalse(request.Address == customRequest.Address);
         }
 
         [Test]
@@ -33,13 +42,12 @@ namespace UnitTests.WebScrapingTests
         [Test]
         public static void SaveWebPageToFile()
         {
-            string filename = "";
-
+            
             WebOperations webOps = new WebOperations();
-            webOps.SaveWebPageToFile(filename);
+            webOps.SaveWebPageToFile();
 
-            FileAssert.Exists(filename);
-
+            
+            FileAssert.Exists(webOps.savedFilePath);
         }
     }
 }
